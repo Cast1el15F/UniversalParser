@@ -1,4 +1,4 @@
-import UniversalPasrser.pars as pars
+import pars
 def start():
     print("1. Парсинг по url и xpath без входа в аккаунт (Используется Requests)",
     "2. Парсинг по url и xpath без входа в аккаунт (Используется Selenium)",

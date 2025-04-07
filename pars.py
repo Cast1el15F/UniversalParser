@@ -109,11 +109,11 @@ def parser_no_account_requests(url: str, xpath: str, type_elements: int, pattern
             result += element.get(attribute_name, "").strip() + "\n"
         return result.strip()
 
-if __name__ == "__main__":
+if __name__ == "__main__": # для быстрых тестов
     url = 'https://www.forbes.ru/milliardery/533585-20-bogatejsih-ludej-mira-2025-rejting-forbes?image=513246' #str(input("URL: "))
     xpath = '//h2' # str(input("Xpath: "))
     type_elements = 4
     pattern = r'[1-9]'
-    attribute_name = 'href'
+    attribute_name = 'class'
     # print(url, xpath, sep="\n")
-    print(parser_no_account_requests(url, xpath, type_elements, pattern, attribute_name))
+    print(parser_no_account_selenium(url, xpath, type_elements, pattern, attribute_name))
